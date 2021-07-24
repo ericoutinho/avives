@@ -1,0 +1,244 @@
+.singular-category {
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: .5rem;
+
+    a:not(:nth-child(1)) {
+        margin-left: .5rem;
+    }
+
+    a {
+        font-size: .9rem;
+        line-height: .9rem;
+        padding: .25rem .5rem;
+        color: #f9f9f9;
+        background: #777;
+        text-decoration: none;
+    }
+}
+
+.singular-title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.singular-excerpt {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 1.25rem;
+}
+
+ul.singular-share-buttons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 2rem;
+
+    li {
+        margin-right: 1rem;
+    }
+
+    li a img {
+        opacity: 1;
+        transition: all .1s;
+    }
+
+    li a img:hover {
+        opacity: .75;
+    }
+}
+
+.singular-article {
+
+    font-size: .9rem;
+    letter-spacing: .25px;
+    word-spacing: .25px;
+
+    h2, h3, h4, h5 {
+        margin: 1.25em 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.25em;
+        font-weight: 700;
+        color: #666;
+    }
+
+    p,
+    ul,
+    ol {
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.25rem;
+    }
+
+    figure img {
+        border: 1px solid #ccc;
+    }
+
+    figure figcaption {
+        margin-top: .5rem;
+        font-size: .9em;
+        font-family: 'Merriweather', serif;
+        font-style: italic;
+        letter-spacing: .25px;
+        word-spacing: .5px;
+        text-align: center;
+    }
+
+    blockquote {
+        margin: 1.25em 0 0 3em;
+        padding-left: 2.75em;
+        font-family: 'Merriweather', serif;
+        font-size: 1rem;
+        font-style: italic;
+        position: relative;
+    }
+
+    blockquote::before {
+        content: '\f10d';
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 900;
+        font-size: 2rem;
+        font-style: normal;
+        position: absolute;
+        top: 0; left: 0;
+        color: $primary;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2em;
+        height: 2em;
+        // background: url("assets/images/quote-left.png");
+        // background-size: 2em 2em;
+        // background-repeat: no-repeat;
+    }
+}
+
+.singular-tags {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+}
+
+.singular-tags::before {
+    content: '\f292';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $primary;
+    margin-right: .75rem;
+    margin-top: -.5rem;
+}
+
+.singular-tags li {
+    margin-right: .5rem;
+}
+
+.singular-tags li a{
+    background: $primary;
+    color: #f9f9f9;
+    padding: .25rem .75rem;
+    text-decoration: none;
+}
+
+.singular-tags li a:hover{
+    background: $secondary;
+    color: #fff;
+}
+
+
+
+
+.author-card__header {
+    margin-bottom: 1rem;
+}
+
+.author-card {
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display:flex;
+}
+
+.author-card__avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+}
+
+.author-card__body {
+    padding-left: 1rem;
+}
+
+.author-card__name {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.author-card__title {
+    font-size: .75rem;
+    margin-bottom: .5rem;
+}
+
+.author-card__bio {
+    font-size: .9rem;
+    color: #777;
+}
+
+.author-card__social {
+    list-style: none;
+    margin-top: .75rem;
+    padding: .75rem 0 0;
+    display: flex;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.author-card__social::before {
+    content: '';
+    height: 1px; width: 25%;
+    display: block;
+    background: #ddd;
+    position: absolute;
+    left: 0; top: 0;
+}
+
+.author-card__social li:not(:nth-child(1)) {
+    margin-left: .5rem;
+}
+
+.author-card__social li a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background: $primary;
+    color: #f9f9f9;
+    border-radius: 50%;
+    padding: .5rem;
+
+    &:hover {
+        background: $primary-hover;
+        color: #fff;
+    }
+}
